@@ -1,0 +1,12 @@
+<div id="footer" class="py-5">
+  <div class="row w-25 m-auto">
+    <div *ngFor="let item of SocialMediaItems" class="col-4 text-center">
+      <a [href]="item.link">
+        <i [class]="item.icon" class="fa-2x"></i>
+      </a>
+    </div>
+  </div>
+  <div class="text-center pt-5">
+    <small class="text-secondary">Mobina Khalilzade <i class="fa fa-copyright text-pink"></i> 2022 </small>
+  </div>
+</div>

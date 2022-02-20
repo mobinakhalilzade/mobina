@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --pink: #e31b6d;
+    --purple: #936ED4;
+  }
+
+  @font-face {
+    font-family: 'Raleway';
+    src: url(assets/font/raleway/Raleway-Medium.ttf);
+  }
+
+  html, body{
+      font-family: 'Raleway' !important;
+      margin: 0;
+  }
+
+  a{
+    text-decoration: none !important;
+  }
+
+  .text-pink{
+    color: var(--pink);
+  }

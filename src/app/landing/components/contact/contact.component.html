@@ -1,0 +1,20 @@
+<div id="contact" class="pt-5">
+<form [formGroup]="contactForm" (ngSubmit)="submit(contactForm)">
+    <h1 class="text-center mx-0 my-5 fs-1 text-light">Contact</h1>
+    <div class="text-pink text-center my-4 py-4 fw-bolder">Have a question or want to work together?
+    </div>
+  <div class="row w-25 m-auto">
+    <input type="email" class="form-control mb-3" formControlName="name" placeholder="Your Name" />
+    <input type="text" class="form-control mb-3" formControlName="email" placeholder="Your Email" />
+    <textarea
+      type="text"
+      class="form-control"
+      formControlName="message"
+      placeholder="Your Message"
+    ></textarea>
+  </div>
+  <div class="text-center py-4">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>

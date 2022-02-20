@@ -1,0 +1,54 @@
+<div class="row text-center mx-0">
+  <h1 class="my-5 fs-1">About</h1>
+  <div class="row mb-4">
+    <div *ngFor="let item of aboutItems" class="col">
+      <i [class]="item.icon" class="text-center text-pink fa-6x mb-4"></i>
+      <h5 class="fw-bolder">
+        {{ item.title }}
+      </h5>
+      <p>
+        {{ item.description }}
+      </p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col text-center">
+      <img
+        src="../../../../assets/images/mobina.jpg"
+        class="img-fluid m-auto clip-polygon shadow-lg"
+        alt="Mobina"
+        width="250"
+        height="200"
+      />
+      <p class="m-3">
+        I am a front-end developer. I have been working with Angular framework
+        for the purpose of building websites, PWAs, and admin dashboards for
+        over two years. I am open to new experiences in the field of front-end
+        development. My goal is to become as deep as possible in this area.
+      </p>
+    </div>
+    <div class="col">
+      <div *ngFor="let item of SkillsItems" class="row">
+        <div class="col-2 text-left">
+          <small>
+            {{ item.name }}
+          </small>
+        </div>
+        <div class="col-9 text-right">
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              [style.width.%]="[item.percent]"
+              [attr.aria-valuenow]="item.percent"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              {{ item.percent }}%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
